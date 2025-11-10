@@ -1,0 +1,46 @@
+/* 1. ESTILOS GENERALES Y CONTENEDOR */
+body {
+    /* Requisito: El tipo de letra utilizado en todo el documento es Verdana. */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+}
+
+.contenedor-receta {
+    max-width: 400px; /* Ancho para simular la columna */
+    margin: 0 auto; /* Centrar el bloque */
+    padding: 10px;
+    border: 3px solid #1e90ff; /* Borde azul */
+}
+/* 2. ESTILOS DE TEXTO SEGÚN LA TABLA */
+
+/* h1 */
+h1 {
+    /* Color: #333 | Tamaño: 20px */
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* h2 */
+h2 {
+    /* Color: #666 | Tamaño: 16px */
+    color: #666;
+    font-size: 16px;
+    margin-top: 1.5em;
+}
+
+/* p y li */
+p, li {
+    /* Color: #000 | Tamaño: 12px */
+    color: #000;
+    font-size: 12px;
+}
+/* 3. ESTILO DE LA IMAGEN */
+.imagen-receta {
+    /* Requisito: El tamaño de la imagen es 300 x 225 píxeles. */
+    width: 300px;
+    height: 225px;
+    display: block; /* Para poder centrarla */
+    margin: 10px auto; /* Centrar y darle margen */
+    object-fit: cover; /* Asegura que la imagen se vea bien */
+}
