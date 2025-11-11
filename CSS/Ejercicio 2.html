@@ -5,133 +5,77 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Ejercicio de selectores</title>
 <style type="text/css">
-/* Título principal */
-#titulo {
-  color: teal;
-}
+    
+/* Título 1 */
+h1 {color:teal;font-size:2em;font-family:'Times New Roman', Times, serif;}
 
-/* Subtítulo */
-#subtitulo {
-  color: blue;
-}
+/* Énfasis en el primer párrado */
+strong {color: red}
 
-/* Párrafos generales */
-p {
-  color: black;
-}
+/* Primer párrafo destacado */
+span.destacado {color: orange}
 
-/* Texto en negrita */
-strong {
-  color: red;
-}
+/* Título 2 */
+h2{color:blue}
 
-/* Texto en cursiva */
-em {
-  color: blue;
-}
+/* El enlace en el segundo párrafo tiene dos colores: rojo (el <a>) y azul (el <em> anidado) */
+a {color: red;}
+em{color: blue}
 
-/* Texto destacado */
-.destacado {
-  color: orange;
-}
+/* span.especial en segundo párrafo*/
+.especial{color: fuchsia;}
 
-/* Texto especial */
-.especial {
-  color: fuchsia;
-}
-
-/* Enlaces normales */
-a {
-  color: red;
-  text-decoration: none;
-}
-
-/* Enlaces al pasar el ratón */
-a:hover {
-  text-decoration: underline;
-}
-
-/* Tabla general */
+/* Propiedades para mostrar los bordes correctamente */
 table {
-  border-collapse: collapse;
-  border: 1px solid olive;
-}
+    border-collapse: collapse;}
 
-/* Bordes y espaciado */
-th, td {
-  border: 1px solid olive;
-  padding: .3em .6em;
-}
+/* Bordes para la tabla, celdas de encabezado (th) y celdas de datos (td) */
+table, th, td {
+    border: 1px solid black;}
 
-/* Título de la tabla */
+/* Encabezados de columnas (thead) */
+thead th.especial {
+  color: red;}
+
+/* Caption de la tabla */
 caption {
-  color: blue;
-  font-weight: bold;
-}
+  color: blue;}
 
-/* Cabecera (thead) — títulos de columna 1 y 2 */
-thead th.especial {
-  color: fuchsia;
-}
-
-/* Pie de tabla (tfoot) — títulos de columna 1 y 2 */
-tfoot th {
-  color: red;
-}
-
-/* Primera fila del cuerpo (tbody) — "Título fila 1" */
+/* Encabezado de fila 1 (Título fila 1) */
 tbody th.especial {
-  color: red;
-}
+  color: orange;}
 
-/* Segunda fila del cuerpo — "Título fila 2" por defecto en verde */
-tbody th {
-  color: green;
-}
-
-/* Segunda fila: primera celda (Título columna 1) en naranja */
-tbody tr:nth-child(2) th {
-  color: orange;
-}
-
-/* Celdas con texto en cursiva dentro de la tabla */
-td em {
-  color: green;
-}
-
-/* Enlaces dentro de la tabla */
-table a {
-  color: blue;
-}
-/* Cabecera de tabla */
+/* Estilos de la tabla */
 thead th.especial {
-  color: fuchsia;
-}
+    color: orange;}
 
-/* Pie de tabla */
-tfoot th {
-  color: red;
-}
+/* Celdas del cuerpo */
+td {color: green;}
 
-/* Contenedor adicional */
-#adicional {
-  border-top: 2px solid teal;
-  margin-top: 1em;
-  padding-top: 1em;
-  color: green;
-}
+/* Encabezado de fila "Título fila 2"*/
+tbody tr:nth-child(2) th {
+    color: red;}
 
-/* Span especial dentro del div adicional */
-#adicional #especial {
-  color: fuchsia;
-}
+/* Color en em de td*/
+td em{color: green;}
 
-/* Enlaces dentro de adicional */
-#adicional a {
-  color: green;
-  text-decoration: underline;
-}
+/*Color en strong de td*/
+td strong{color: orange;}
+
+/* Fila de Tfoot*/
+tfoot * {
+    color: red;}
+
+/* Párrafo dentro de #adicional */
+#adicional p { color: olive;}
+
+/* El span#especial en el segundo p de #adicional (Nunc elit elit, vehicula vulputate) es NARANJA en la imagen */
+#adicional #especial { color: fuchsia;}
+
+/* El enlace en el tercer p de #adicional (Donec arcu pede, pretium vitae) es VERDE en la imagen */
+#adicional a {color: green;}
 </style>
+
 </head>
 <body>
 <h1 id="titulo">Lorem ipsum dolor sit amet</h1>
